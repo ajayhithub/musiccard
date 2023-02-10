@@ -1,0 +1,90 @@
+
+
+*{
+    margin: 0px;
+    background-color: #eef2f6;
+}
+h2,h3{
+    background-color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 6vh 39vw;
+    background-color: white;
+    width: 15rem;
+    align-items: center;
+    border-radius: 23px;
+    height: 23rem;
+    box-shadow: 0px 0px 6px
+}
+img{
+    width: 12rem;
+    border-radius: 120px;
+    height: 12rem;
+    background-color: white;
+    box-shadow: 0px 0px 8px;
+    margin: 19px 0px;
+}
+.img{
+    background-color: white;
+}
+.music-control{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-top: 10px;
+}
+.bt{
+    background-color: white;
+}
+.pause{
+    display: none;
+}
+.pauseshow{
+    display: block;
+}
+.play{
+    display: none;
+}
+.rotate{
+    animation: rotate 3s linear infinite;
+}
+@keyframes rotate{
+     from{
+        transform: rotate(0deg);
+        transform-style: preserve-3d;
+
+     }
+    to{
+        transform: rotate(360deg);
+        transform-style: preserve-3d;
+    }
+}
+.progress-div{
+    width: 100%;
+    height: 0.2rem;
+    box-shadow: 0px 0px 5px;
+    position: relative;
+}
+.progress{
+ width: 0%;
+  position: absolute;
+  height: 0.3rem;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+}
+.duration-meter{
+    display: flex;
+    justify-content:space-between;
+    background-color: white;
+}
+#c-time{
+    background-color: white;
+    font-size: 13px;
+}
+#d-time{
+    background-color: white;
+    font-size: 13px;
+}
